@@ -1,0 +1,69 @@
+$menu-color: #bac8e4;
+$menu-items: #E8F0FF;
+
+@mixin sizeall($w,$h,$x,$y,$px,$py,$backcol) {
+  width: $w;
+  height: $h;
+  margin: $y $x;
+  padding: $py $px;
+  background-color: $backcol;
+}
+
+@mixin displayall($distype,$disjusty,$disdire,$diswarp,$alignItem) {
+  display: $distype;
+  justify-content: $disjusty;
+  flex-direction: $disdire;
+  flex-wrap: $diswarp;
+  align-items: $alignItem;
+
+}
+
+@mixin fontall($fontsize,$fontw,$directtext) {
+  font-size: $fontsize;
+  font-weight: $fontw;
+  direction: $directtext;
+}
+
+.menuback {
+  @include sizeall(100%, 10vh, 0, 0, 0, 0, $menu-color);
+  @include displayall(flex, space-around, row, nowrap, center);
+
+}
+
+.itemsMenu {
+  list-style-type: none;
+  @include displayall(flex, space-around, row, nowrap, none);
+  gap: 2vw;
+}
+.itemsMenu li:hover{
+  @include fontall(1vw,700,none);
+  cursor: pointer;
+}
+
+.seacrchbox {
+  @include displayall(flex, space-between, row, nowrap, center);
+
+  width: 19vw;
+}
+
+.profileimg {
+  border-radius: 50%;
+}
+
+.searchitems {
+  border-radius: 8px;
+  @include sizeall(200px, 50px, 0, 0, 2px, 2px, $menu-items);
+  @include displayall(flex, space-between, row, nowrap, center);
+}
+
+.searchitems img {
+  width: 24px;
+  height: 24px;
+}
+
+.searchitems input {
+  border: none;
+  outline: none;
+  background-color: $menu-items;
+
+}

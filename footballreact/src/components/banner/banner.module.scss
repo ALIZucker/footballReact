@@ -1,0 +1,28 @@
+@mixin sizeall($w,$h,$x,$y,$px,$py,$backcol) {
+  width: $w;
+  height: $h;
+  margin: $y $x;
+  padding: $py $px;
+  background-color: $backcol;
+}
+
+@mixin displayall($distype,$disjusty,$disdire,$diswarp,$alignItem) {
+  display: $distype;
+  justify-content: $disjusty;
+  flex-direction: $disdire;
+  flex-wrap: $diswarp;
+  align-items: $alignItem;
+
+}
+
+@mixin fontall($fontsize,$fontw,$directtext) {
+  font-size: $fontsize;
+  font-weight: $fontw;
+  direction: $directtext;
+}
+
+.boten {
+  @include sizeall(260px, 50px, 1vw, 0, 2px, 2px, none);
+  margin-top: 10vh;
+  @include fontall(1.1vw, 600, ltr);
+}
