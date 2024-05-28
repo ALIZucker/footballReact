@@ -1,0 +1,16 @@
+.imgpost {
+  width: 100%;
+  height: 285px; }
+
+.boxpost, .footerpost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.2vw;
+  gap: 0.4vw; }
+
+.footerpost {
+  padding: 4vh 0;
+  background-color: #EEEEEE; }
+
+/*# sourceMappingURL=post.module.css.map */

@@ -1,6 +1,8 @@
 import React from 'react';
 import Menu from './components/menuBar/menu.js'
 import Banner from './components/banner/banner.js'
+import TitleBot from "./components/TitleBot/TitleBot.js";
+import Post from "./components/post/Post.js";
 import S from './App.css'
 const App = () => {
 
@@ -9,6 +11,9 @@ const App = () => {
         <React.Fragment>
             <Menu/>
             <Banner/>
+            <TitleBot isboten="true"/>
+            <Post/>
+            <TitleBot isboten="false"/>
         </React.Fragment>
     );
 };

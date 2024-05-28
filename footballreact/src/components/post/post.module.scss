@@ -1,0 +1,43 @@
+$back-col:#EEEEEE;
+@mixin sizeall($w,$h,$x,$y,$px,$py,$backcol) {
+  width: $w;
+  height: $h;
+  margin: $y $x;
+  padding: $py $px;
+  background-color: $backcol;
+}
+
+@mixin displayall($distype,$disjusty,$disdire,$diswarp,$alignItem) {
+  display: $distype;
+  justify-content: $disjusty;
+  flex-direction: $disdire;
+  flex-wrap: $diswarp;
+  align-items: $alignItem;
+
+}
+
+@mixin fontall($fontsize,$fontw,$directtext) {
+  font-size: $fontsize;
+  font-weight: $fontw;
+  direction: $directtext;
+}
+
+.imgpost {
+  width: 100%;
+  height: 285px;
+
+}
+
+.boxpost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.2vw;
+  gap: 0.4vw;
+}
+
+.footerpost {
+  @extend .boxpost;
+  padding: 4vh 0;
+  background-color:$back-col ;
+}

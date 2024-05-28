@@ -1,0 +1,13 @@
+.titleBox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 54px;
+  padding: 0 3vw; }
+
+.text {
+  font-size: 35px; }
+
+/*# sourceMappingURL=title.module.css.map */

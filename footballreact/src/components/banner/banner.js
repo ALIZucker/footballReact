@@ -7,7 +7,7 @@ import styles from './banner.module.css'
 const Banner = () => {
 
     return (
-        <div style={{width: "100%" ,height:"700px", backgroundImage: `url(${imgbanner})`, backgroundRepeat: "no-repeat"
+        <div style={{ height:"700px", backgroundImage: `url(${imgbanner})`, backgroundRepeat: "no-repeat"
         ,backgroundPosition:"left",backgroundSize:"cover",paddingLeft:"30px"}}>
             <h1 style={{paddingTop:"130px",fontSize:"100px",color:"#fff"}}>You can be the<br/> king of FIFA</h1>
             <p style={{paddingTop:"30px",fontSize:"35px"}}>The most interesting online FIFA<br/> competitions on the official website of FIFA games</p>
