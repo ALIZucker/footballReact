@@ -1,0 +1,70 @@
+@mixin sizeall($w,$h,$x,$y,$px,$py,$backcol) {
+  width: $w;
+  height: $h;
+  margin: $y $x;
+  padding: $py $px;
+  background-color: $backcol;
+}
+
+@mixin displayall($distype,$disjusty,$disdire,$diswarp,$alignItem) {
+  display: $distype;
+  justify-content: $disjusty;
+  flex-direction: $disdire;
+  flex-wrap: $diswarp;
+  align-items: $alignItem;
+
+}
+
+@mixin fontall($fontsize,$fontw,$directtext) {
+  font-size: $fontsize;
+  font-weight: $fontw;
+  direction: $directtext;
+}
+
+.mainBox {
+  @include sizeall(95%, 77vh, 3vw, 0, 0, 0, none);
+  @include displayall(flex, none, row, nowrap, start);
+}
+
+.LeftBox {
+  @include sizeall(50%, 100%, 0, 0, 0, 0, white);
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 50px;
+}
+
+.RightBox {
+  @include sizeall(50%, 96%, 0, 2vh, 0, 0, white);
+  display: flex;
+
+  flex-direction: column;
+  justify-content: end;
+}
+
+.Righttitle {
+  background: rgba(40, 40, 190, 0.7);
+  height: 5vh;
+
+  width: 80%;
+  text-align: center;
+  color: aliceblue;
+
+}
+.cirleActive {
+  background-color: #FFFFFF;
+  width: 11px;
+  height: 11px;
+  margin-left: 0.3vw;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.cirle {
+  background-color:#7B7B7B;
+;
+  width: 11px;
+  height: 11px;
+  margin-left: 0.3vw;
+  display: inline-block;
+  border-radius: 50%;
+}

@@ -1,0 +1,56 @@
+.mainBox {
+  width: 95%;
+  height: 77vh;
+  margin: 0 3vw;
+  padding: 0 0;
+  background-color: none;
+  display: flex;
+  justify-content: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: start; }
+
+.LeftBox {
+  width: 50%;
+  height: 100%;
+  margin: 0 0;
+  padding: 0 0;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 50px; }
+
+.RightBox {
+  width: 50%;
+  height: 96%;
+  margin: 2vh 0;
+  padding: 0 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end; }
+
+.Righttitle {
+  background: rgba(40, 40, 190, 0.7);
+  height: 5vh;
+  width: 80%;
+  text-align: center;
+  color: aliceblue; }
+
+.cirleActive {
+  background-color: #FFFFFF;
+  width: 11px;
+  height: 11px;
+  margin-left: 0.3vw;
+  display: inline-block;
+  border-radius: 50%; }
+
+.cirle {
+  background-color: #7B7B7B;
+  width: 11px;
+  height: 11px;
+  margin-left: 0.3vw;
+  display: inline-block;
+  border-radius: 50%; }
+
+/*# sourceMappingURL=Competition.module.css.map */

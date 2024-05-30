@@ -7,7 +7,7 @@ const TitleBot = (props) => {
     if (props.isboten==="true"){
         return (
             <div className={styles.titleBox}>
-                <div className={styles.text} style={{fontWeight: "300"}}>Upcoming <p style={{fontWeight: "600"}}>Competitions</p></div>
+                <div className={styles.text} style={{fontWeight: "300"}}>{props.littext} <p style={{fontWeight: "600"}}>{props.boldtext}</p></div>
 
                 <Buton/>
             </div>
@@ -15,7 +15,7 @@ const TitleBot = (props) => {
     }else {
         return (
             <div className={styles.titleBox}>
-                <div className={styles.text} style={{fontWeight: "300"}}>Upcoming <p style={{fontWeight: "600"}}>Competitions</p></div>
+                <div className={styles.text} style={{fontWeight: "300"}}>{props.littext} <p style={{fontWeight: "600"}}>{props.boldtext}</p></div>
 
             </div>
         );

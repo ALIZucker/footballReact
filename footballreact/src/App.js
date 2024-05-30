@@ -3,6 +3,7 @@ import Menu from './components/menuBar/menu.js'
 import Banner from './components/banner/banner.js'
 import TitleBot from "./components/TitleBot/TitleBot.js";
 import Post from "./components/post/Post.js";
+import Competintion from './components/CompetitionBar/Competition.js'
 import S from './App.css'
 const App = () => {
 
@@ -11,9 +12,11 @@ const App = () => {
         <React.Fragment>
             <Menu/>
             <Banner/>
-            <TitleBot isboten="true"/>
+            <TitleBot isboten="true" littext="Upcoming" boldtext="Competitions"/>
             <Post/>
-            <TitleBot isboten="false"/>
+            <TitleBot isboten="false" littext="Competition" boldtext=" of heroes"/>
+            <Competintion/>
+            <TitleBot isboten="true" littext="FIFA" boldtext="HEROES"/>
         </React.Fragment>
     );
 };
