@@ -4,6 +4,7 @@ import Banner from './components/banner/banner.js'
 import TitleBot from "./components/TitleBot/TitleBot.js";
 import Post from "./components/post/Post.js";
 import Competintion from './components/CompetitionBar/Competition.js'
+import Heros from './components/Heroes/Heroes.js'
 import S from './App.css'
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
             <TitleBot isboten="false" littext="Competition" boldtext=" of heroes"/>
             <Competintion/>
             <TitleBot isboten="true" littext="FIFA" boldtext="HEROES"/>
+            <Heros/>
         </React.Fragment>
     );
 };
