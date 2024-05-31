@@ -32,6 +32,8 @@ $menu-items: #E8F0FF;
 
 .itemsMenu {
   list-style-type: none;
+  width: 30vw;
+
   @include displayall(flex, space-around, row, nowrap, none);
   gap: 2vw;
 }

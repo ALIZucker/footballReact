@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Competitionitems.module.css'
 
-import back from "../../image/back (1).png";
-import next from "../../image/next.png";
+import back from "../../image/left-arrow.png";
+import next from "../../image/right-arrow.png";
 
 const Competitionitems = (props) => {
     return (

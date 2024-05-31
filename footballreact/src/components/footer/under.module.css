@@ -1,0 +1,27 @@
+.boxmain {
+    width: 70%;
+    margin: 5vh 2vw;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 2vw;
+    margin-top: 2vh;
+}
+
+.boxmain ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+.boxmain ul li {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    font-size: 1.2vw;
+
+}

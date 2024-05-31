@@ -1,0 +1,69 @@
+.mainbox {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 3vw;
+}
+
+.upersearch {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.boton {
+    width: 6vw;
+    text-align: center;
+    padding-top: 1vh;
+    background-color: #99B1DC;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.2vw;
+    cursor: pointer;
+
+}
+
+.titlesearch {
+    margin-top: 8vh;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.discriptionsearch {
+    margin-top: 2vh;
+    font-size: 1vw;
+}
+
+.inputt {
+    width: 23vw;
+    height: 5vh;
+}
+
+.listbox {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7vh;
+    justify-content: center;
+
+
+
+}
+
+.list {
+    margin-top: 1.52vh;
+
+    padding-left: 5vw;
+}
+
+.list li {
+    margin-top: 1.4vh;
+    font-size: 18px;
+}
+
+.list li::marker {
+    color: #1a1a9b;
+}

@@ -5,7 +5,10 @@ import TitleBot from "./components/TitleBot/TitleBot.js";
 import Post from "./components/post/Post.js";
 import Competintion from './components/CompetitionBar/Competition.js'
 import Heros from './components/Heroes/Heroes.js'
-import S from './App.css'
+import ReadySearch from "./components/readySreach/ReadySearch";
+import NewsFootball from "./components/NewsFootball/NewsFootball.js"
+import Branding from "./components/Brandimg/Branding.js";
+import Footer from "./components/footer/Footer";
 const App = () => {
 
 
@@ -19,6 +22,12 @@ const App = () => {
             <Competintion/>
             <TitleBot isboten="true" littext="FIFA" boldtext="HEROES"/>
             <Heros/>
+            <ReadySearch/>
+            <TitleBot isboten="true" littext="World" boldtext="Football News"/>
+            <NewsFootball/>
+            <TitleBot isboten="true" littext="FIFA" boldtext="PARTNERS"/>
+            <Branding/>
+                <Footer/>
         </React.Fragment>
     );
 };
