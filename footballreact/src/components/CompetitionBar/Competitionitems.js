@@ -1,12 +1,31 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import styles from './Competitionitems.module.css'
 
 import back from "../../image/left-arrow.png";
 import next from "../../image/right-arrow.png";
 
 const Competitionitems = (props) => {
+
+    const itemleft=useRef(null)
+    useEffect(()=>{
+        window.addEventListener("scroll",function () {
+            if(window.scrollY>=940 && window.scrollY<=1200){
+                if (itemleft.current){
+
+                    itemleft.current.style.width="45vw";
+                    itemleft.current.style.visibility="visible";
+                    itemleft.current.style.transform="rotateZ(360deg)";
+
+                }
+            }
+        })
+    },[])
+
+
+
+
     return (
-        <div className={styles.mainbox}>
+        <div ref={itemleft} className={styles.mainbox}>
             <section style={{margin: "2vh 1vw"}} className={styles.textstyle}>
                 <div className={styles.live}></div>
                 Live

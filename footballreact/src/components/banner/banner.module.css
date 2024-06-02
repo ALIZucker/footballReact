@@ -7,6 +7,10 @@
   margin-top: 10vh;
   font-size: 1.1vw;
   font-weight: 600;
-  direction: ltr; }
+  direction: ltr;
+  transition: transform .3s; }
+
+.boten:hover {
+  transform: scale(1.05); }
 
 /*# sourceMappingURL=banner.module.css.map */

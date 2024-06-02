@@ -7,6 +7,9 @@
     flex-direction: row;
     justify-content: space-around;
 }
+.postbox:hover{
+    box-shadow: 2px -4px 5px 3px #aba9a9;
+}
 
 .postbox {
     width: 32vw;

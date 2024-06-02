@@ -29,15 +29,20 @@
 .LeftBox {
   @include sizeall(50%, 100%, 0, 0, 0, 0, white);
   display: flex;
+
   flex-flow: row wrap;
   column-gap: 50px;
 }
 
 .RightBox {
-  @include sizeall(50%, 96%, 0, 2vh, 0, 0, white);
+  @include sizeall(0, 96%, 0, 2vh, 0, 0, white);
   display: flex;
-
+  transform: translateX(100%) ;
+  visibility: hidden;
   flex-direction: column;
+  transition: all 2s;
+  background-size: cover;
+  background-position: center;
   justify-content: end;
 }
 

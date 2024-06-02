@@ -25,4 +25,8 @@
   @include sizeall(260px, 50px, 1vw, 0, 2px, 2px, none);
   margin-top: 10vh;
   @include fontall(1.1vw, 600, ltr);
+  transition: transform .3s;
+}
+.boten:hover{
+  transform: scale(1.05);
 }

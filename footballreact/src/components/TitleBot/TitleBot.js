@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef ,useEffect} from 'react';
 import styles from './title.module.css'
 import  back from './../../image/left-arrow.png'
 import next from './../../image/right-arrow.png'
@@ -24,9 +24,13 @@ const TitleBot = (props) => {
 };
 
 const Buton = () => {
+
+
+
+
     return (
         <div>
-            <button style={{
+            <button  style={{
                 width: "4vw", height: "7.4vh", backgroundColor: "transparent"
                 , backgroundImage: `url(${back})`,
                 backgroundSize: "contain", backgroundPosition: "center", opacity: "0.7",marginRight:"0.3vw"

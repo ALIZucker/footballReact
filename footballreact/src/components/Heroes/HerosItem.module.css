@@ -55,6 +55,9 @@
     justify-content: end;
 
 }
+.botbacg:hover{
+   transform: scale(1.05);
+}
 .botbacg{
     width: 13vw;
     height: 10vh;

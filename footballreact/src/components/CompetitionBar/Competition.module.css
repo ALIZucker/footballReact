@@ -21,13 +21,18 @@
   column-gap: 50px; }
 
 .RightBox {
-  width: 50%;
+  width: 0;
   height: 96%;
   margin: 2vh 0;
   padding: 0 0;
   background-color: white;
   display: flex;
+  transform: translateX(100%);
+  visibility: hidden;
   flex-direction: column;
+  transition: all 2s;
+  background-size: cover;
+  background-position: center;
   justify-content: end; }
 
 .Righttitle {

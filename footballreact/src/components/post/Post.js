@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import style from './post.module.css'
 import imgp from './../../image/Premier-League-Logo.jpg'
 import clockimg from './../../image/clock.png'
@@ -8,11 +8,22 @@ import spainimg from './../../image/LaLiga-logo.png'
 
 
 const Post = () => {
+    const animshow=useRef(null)
+    useEffect(()=>{
+        window.addEventListener('scroll',function () {
+            if (window.scrollY >= 400){
+                if (animshow.current){
+                    animshow.current.style.opacity="1";
+                }
 
+            }
+        })
+
+    },[])
 
 
     return (
-        <div className={style.boxpost}>
+        <div ref={animshow} style={{opacity:"0"}} className={style.boxpost}>
 
                 <Itemspost image={imgp} sad="10" min="15" sani="30"/>
                 <Itemspost image={italyimg} sad="12" min="10" sani="40"/>
@@ -37,7 +48,7 @@ const People = () => {
 const Itemspost = (props) => {
 
     return (
-        <div style={{width: "500px", padding: "2vh 3vw"}}>
+        <div className={style.shadow}  style={{width: "500px", padding: "2vh 3vw"}}>
             <img className={style.imgpost} src={props.image}/>
             <section className={style.footerpost}>
                 <ItemspostTime o={props.sad} m={props.min} s={props.sani}/>

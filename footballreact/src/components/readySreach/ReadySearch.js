@@ -7,7 +7,7 @@ import styles from "../banner/banner.module.css";
 
 const ReadySearch = () => {
     return (
-        <div className={style.mainbox}>
+        <div className={style.mainbox} >
             <Imgestyle/>
             <Inputtype/>
             <Imgestyle/>
@@ -53,7 +53,7 @@ const Buton=(props)=>{
 
     return(
         <React.Fragment>
-            <button  style={{color:props.txtcolor,backgroundColor:props.color,width:"20vw"
+            <button className={style.botbacg} style={{color:props.txtcolor,backgroundColor:props.color,width:"20vw"
             ,height:"6vh",fontSize:"1vw",marginLeft:"0.2vw",marginTop:"3vh"}}>{props.text}</button>
         </React.Fragment>
 
